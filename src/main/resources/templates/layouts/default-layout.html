@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>layouts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- header fragment 사용 -->
+    <th:block th:replace="common/header :: header"></th:block>
+    <!-- content fragment 사용 -->
+    <th:block layout:fragment="content"></th:block>
+    <!-- footer fragment 사용 -->
+    <th:block th:replace="common/footer :: footer"></th:block>
+</body>
+</html>
