@@ -1,0 +1,42 @@
+/* 로그인 페이지 스타일 */
+
+.find-wrap {
+     padding: 20px 0 48px;
+     text-align: center;
+     display: flex;
+}
+
+.find-wrap li {
+    list-style : none; /* 불릿 기호 삭제 */
+}
+
+.find-wrap li:first-child::before{
+    padding : 0;
+    content : "";
+}
+
+.find-wrap li::before {
+    padding-right : 10px;
+    padding-left : 10px;
+    font-size: 14px;
+    content: '|';
+    color: #dadada;
+}
+
+
+.find-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #888;
+}
+
+/* 카카오 로그인 버튼 이미지*/
+
+.kakao-login {
+    background: url(../../images/kakao_login_large_wide.png);
+    background-size : cover;
+    border : none;
+    cursor : pointer;
+}

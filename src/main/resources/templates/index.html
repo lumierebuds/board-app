@@ -5,11 +5,14 @@
       layout:decorate="~{layouts/default-layout}">
 <head>
     <meta charset="UTF-8">
-    <title>환영합니다.</title>
+    <th:block layout:fragment="title">
+        <title>타임리프 게시판</title>
+    </th:block>
+
 </head>
 <body>
-    <div layout:fragment="content" class="container">
+    <main layout:fragment="content">
         <h1>게시판 어플리케이션에 오신것을 환영합니다.</h1>
-    </div>
+    </main>
 </body>
 </html>
